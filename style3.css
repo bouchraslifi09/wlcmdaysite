@@ -1,0 +1,301 @@
+*{
+   color: white;
+    padding: 0;
+    margin: 0; 
+    
+} 
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+ }
+
+
+
+.navbar {
+  position: fixed;         
+  top: 0;                     
+  left: 0;
+  width: 100%;                
+  z-index: 1000;             
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;  
+  background-color: #000;     
+  color: var(--white);        
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 50px;
+    transition: color 0.3s;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.nav-links li a:hover {
+    color: #ff0000;
+}
+.search-box{
+    display: flex; 
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 6px 10Px;  
+    width: 300px;
+}
+.search-box input{
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+.search-box button{
+    background: none; 
+    border: none; 
+    cursor: pointer;
+    font-size: 16px; 
+}
+.search-box button i{
+    color: black;
+}
+.nav-links.right li.login-item a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-links.right li.login-item a:hover {
+  color: #ff0000;
+}
+.nav-links.right li.login-item i {
+  font-size: 20px;
+  color: white;
+  transition: color 0.3s;
+}
+.nav-links.right li.login-item a:hover i {
+  color: #ff0000;
+} 
+.vid{
+    width: 80%;
+    margin: auto;
+}  
+.vid video{
+    width: 100%;
+}
+.container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 400px;
+    padding: 40px 0;
+    gap: 25px;
+}
+.pictur{
+    width: 30%;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.pictur img{
+    width: 100%;
+    height: 100%;
+}
+.content .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+.content .title button{
+    background-color: red;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.content .title p{
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.content .infor{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+.content .infor .one{
+    color: black;
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+.content .description{
+    font-size: 18px;
+    line-height: 23px;
+}
+.content .data{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.content .data .box-info, .cast{
+    text-align: right;
+}
+.content .data .cast{
+    vertical-align: top;
+}
+.episod{
+    height: 250px;
+    width: 80%;
+    margin: auto;
+}
+.episod select{
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 8px 0;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.episod select option{
+    background-color: white;
+    color: black;
+}
+.episod .ep{
+    display: grid;
+    height: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px 20px;
+    padding: 15px 0;
+}
+.episod .ep a button{
+    background: none;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.753);
+    cursor: pointer;
+}
+.episod .ep a button i{
+    margin: 15px ;
+    background: none;
+    color: rgba(255, 255, 255, 0.767);
+}
+.episod .ep a button:hover{
+    background-color: red;
+    color: white;
+}
+.titre{
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+}
+.parent{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px auto 300px auto;
+    gap: 15px 40px;
+}
+.parent a{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.parent  img{
+    width: 100%;
+    height: 100%;
+}
+.parent .item1{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+}
+.parent .item1 span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+.parent .item1 span .hd{
+    background-color: red;
+    padding: 3px;
+    border-radius: 5px;
+}
+.parent .item1 span .box-se{
+    border: 2px solid red;
+    padding: 3px;
+    border-radius: 5px;
+}
+.comment{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+.comment ul{
+    list-style: none;  
+}
+.comment ul li{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.comment .img-box{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.comment .img-box img{
+    width: 100%;
+    height: 100%;
+}
+.comment ul li .com-box{
+    font-size: 15px;
+    line-height: 30px;
+    width: 100%;
+}
+.comment ul li .com-box .item2 p,i{
+    display: inline-block;
+    margin-right: 20px;
+}
+.comment ul li .com-box textarea{
+    width: 60%;
+    border-radius: 25px;
+    padding: 20px 15px;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    font-size: 18px;
+    color: black;
+}
+
