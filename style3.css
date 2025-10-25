@@ -1,32 +1,23 @@
 *{
-   color: white;
+    color: white;
     padding: 0;
-    margin: 0; 
-    
-} 
-
-body {
-  background-color: black;
-  color: white;
-  font-family: Arial, Helvetica, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
- }
-
-
-
-.navbar {
-  position: fixed;         
-  top: 0;                     
-  left: 0;
-  width: 100%;                
-  z-index: 1000;             
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 30px;  
-  background-color: #000;     
-  color: var(--white);        
+    margin: 0;
+    font-family: sans-serif;
 }
-
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+}
 .nav-links{
     list-style: none;
     display: flex;
@@ -48,7 +39,7 @@ body {
     align-items: center;
     background-color: white;
     border-radius: 25px;
-    padding: 6px 10Px;  
+    padding: 5px 10px; 
     width: 300px;
 }
 .search-box input{
@@ -298,4 +289,5 @@ body {
     font-size: 18px;
     color: black;
 }
+
 
